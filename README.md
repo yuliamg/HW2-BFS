@@ -1,4 +1,4 @@
-![BuildStatus](https://github.com/yuliamg/HW2-BFS/workflows/HW2-BFS/badge.svg?event=push)
+![BuildStatus](https://github.com/yuliamg/HW2-BFS/workflows/HW2-BFS/badge.svg)
 # Assignment 2
 Breadth-first search
 
