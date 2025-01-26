@@ -13,7 +13,7 @@ def test_bfs_traversal():
     """
     
     #create instace of Graph class
-    g = graph.Graph(filename="../data/tiny_network.adjlist")
+    g = graph.Graph(filename="./data/tiny_network.adjlist")
     
     #test that neighbors are being returned correctly
     assert g.neighbors('Neil Risch') == ['29700475']
@@ -29,7 +29,7 @@ def test_bfs_traversal():
         g.bfs("Yulia Gutierrez")
         
     #create instace of empty graph
-    g_empty = graph.Graph(filename="../data/empty_graph.adjlist")
+    g_empty = graph.Graph(filename="./data/empty_graph.adjlist")
     
     #assert that an error is raised when the graph is empty
     with pytest.raises(ValueError):
@@ -49,7 +49,7 @@ def test_bfs():
     """
     
     #create graph 
-    g = graph.Graph(filename="../data/citation_network.adjlist")
+    g = graph.Graph(filename="./data/citation_network.adjlist")
     
     #testing that the shortest path between Luke Gilbert and Joseph Bondy-Denomy is correct using networkx to find the shortest path
     assert g.bfs("Luke Gilbert", "Joseph Bondy-Denomy") == nx.shortest_path(g.graph, "Luke Gilbert", "Joseph Bondy-Denomy")
