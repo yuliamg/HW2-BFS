@@ -54,9 +54,10 @@ def test_bfs():
     #testing that the shortest path between Luke Gilbert and Joseph Bondy-Denomy is correct using networkx to find the shortest path
     assert g.bfs("Luke Gilbert", "Joseph Bondy-Denomy") == nx.shortest_path(g.graph, "Luke Gilbert", "Joseph Bondy-Denomy")
     
-    #testing that the shortest path between Luke Gilbert and a node not in the graph raisees an error 
+    #testing that the shortest path between Luke Gilbert and a node not in the graph raises an error 
     with pytest.raises(ValueError):
         g.bfs("Luke Gilbert", "Yulia Gutierrez")
+    
     
     
         
