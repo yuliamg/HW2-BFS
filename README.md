@@ -13,4 +13,5 @@ Breadth-first search
 ## Unit tests
 
 * In **_test_bfs_traversal_**, we ensure that neighbors are returned correctly, the BFS of the _tiny_network.adjlist_ returns 30 nodes, and correctly returns the order of traversal for an example node. Plus, an error is raised if the graph is empty or if a node does not exists in the graph.
-* In **_test_bfs_**, we test that the shortest path between a start and end node is correct, as determined by the **_networkx shortest_path_** function. 
+  
+* In **_test_bfs_**, we test that the shortest path between a start and end node is correct, as determined by the **_networkx shortest_path_** function. Additionally, we test that a node not in the graph will raise an error. 
